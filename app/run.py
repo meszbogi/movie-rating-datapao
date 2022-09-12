@@ -1,6 +1,6 @@
-from app.movie_scrapper import get_top_20_movie_info
-from app.review_penalizer import calculate_review_penalty
-from app.oscar_rewarder import calculate_oscar_score
+from movie_scrapper import get_top_20_movie_info
+from review_penalizer import calculate_review_penalty
+from oscar_rewarder import calculate_oscar_score
 
 def run():
     movies = get_top_20_movie_info()

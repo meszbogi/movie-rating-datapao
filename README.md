@@ -19,4 +19,6 @@ I used *pipenv* virtual environment manager to handle third-party libraries.
 The main functionalty is in **/app/run.py**. To run the application start this scrip from the project structrure:
 `python .\app\run.py`
 
-For testing I used the **pytest** library. Run unit tests with the following command: `pytest .\test\`. More details about pytest [here](https://docs.pytest.org/en/latest/how-to/usage.html)
+For testing I used the **pytest** library. Run unit tests from the **app** folder with the following command: `python -m pytest ..\test\`. More details about pytest [here](https://docs.pytest.org/en/latest/how-to/usage.html)
+
+*This setup is required while the python -m command adds the current folder to syspath, which required for have the necessery imports for testing.*
