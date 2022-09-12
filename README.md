@@ -3,7 +3,7 @@
 This is a solution for the home assignment **The Big IMDB quest** from **Datapao** by *Boglarka Mesz*
 
 ## Setup
-The application is written in Python (version 3. 
+The application is written in Python (version 3). 
 I used *pipenv* virtual environment manager to handle third-party libraries.
 
 1. Install python 3 (if it is not already done so) and pip
