@@ -10,6 +10,7 @@ def get_top_20_movie_info():
             oscars = len([oscar for oscar in info['awards'] if oscar['award'] == 'Oscar'])
             movie = {"movieID": mv.movieID,
                     "title": mv['title'],
+                    "rating": mv['rating'],
                     "votes": mv['votes'],
                     "oscars": oscars
             }

@@ -1,10 +1,11 @@
 from schema import Schema, And, Use
-from movie_scrapper import get_top_20_movie_info
+from app.movie_scrapper import get_top_20_movie_info
 
 def test_srapped_structure():
     schema = Schema([{
         "movieID": str,
         "title": str,
+        "rating": float,
         "votes": int,
         "oscars": int
     }])
