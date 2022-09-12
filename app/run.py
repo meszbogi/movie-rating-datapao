@@ -11,11 +11,10 @@ def recalculate_imdb_scores(movies):
     with_review_penalty = calculate_review_penalty(movies)
     with_oscar_score = calculate_oscar_score(with_review_penalty)
 
-    result_movies = with_oscar_score[['movieID', 'title', 'votes', 'oscars', 'rating']]
-    result_movies['adjusted'] = with_oscar_score['rating'] + \
+    with_oscar_score['adjusted'] = with_oscar_score['rating'] + \
                                    with_oscar_score['review_penalty'] + \
                                    with_oscar_score['oscar_score']
-    return result_movies
+    return with_oscar_score[['movieID', 'title', 'votes', 'oscars', 'rating', 'adjusted']]
 
 if __name__ == '__main__':
     run()
