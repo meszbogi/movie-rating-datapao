@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 cinemagoer = "*"
+pytest = "*"
+schema = "*"
 
 [dev-packages]
 
