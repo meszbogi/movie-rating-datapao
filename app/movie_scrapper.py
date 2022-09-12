@@ -1,4 +1,5 @@
 from imdb import Cinemagoer, IMDbError
+from decimal import Decimal
 
 def get_top_20_movie_info():
     movie_info = []
@@ -10,7 +11,7 @@ def get_top_20_movie_info():
             oscars = len([oscar for oscar in info['awards'] if oscar['award'] == 'Oscar'])
             movie = {"movieID": mv.movieID,
                     "title": mv['title'],
-                    "rating": mv['rating'],
+                    "rating": Decimal(str(mv['rating'])),
                     "votes": mv['votes'],
                     "oscars": oscars
             }

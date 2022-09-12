@@ -1,11 +1,12 @@
-from schema import Schema, And, Use
+from decimal import Decimal
+from schema import Schema
 from app.movie_scrapper import get_top_20_movie_info
 
-def test_srapped_structure():
+def test_scrapped_structure():
     schema = Schema([{
         "movieID": str,
         "title": str,
-        "rating": float,
+        "rating": Decimal,
         "votes": int,
         "oscars": int
     }])
