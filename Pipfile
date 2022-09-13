@@ -8,6 +8,8 @@ cinemagoer = "*"
 pytest = "*"
 schema = "*"
 pandas = "*"
+click = "*"
+pyarrow = "*"
 
 [dev-packages]
 
